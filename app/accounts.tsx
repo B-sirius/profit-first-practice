@@ -1,4 +1,5 @@
 import AccountList from "@/components/account-list";
+import AddAccountListItem from "@/components/add-account-list-item";
 import { View, Text, StyleSheet } from "react-native";
 
 export default function AccountScreen() {
@@ -10,6 +11,7 @@ export default function AccountScreen() {
         <Text>TAP</Text>
       </View>
       <AccountList />
+      <AddAccountListItem />
     </View>
   );
 }
