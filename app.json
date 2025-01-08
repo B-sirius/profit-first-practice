@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.b-sirius.profit-first"
     },
     "android": {
       "adaptiveIcon": {
@@ -33,18 +34,24 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      ["expo-build-properties", {
-        "ios": {
-          "extraPods": [
-            {
-              "name": "simdjson",
-              "configurations": ["Debug", "Release"],
-              "path": "../node_modules/@nozbe/simdjson",
-              "modular_headers": true
-            }
-          ]
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "extraPods": [
+              {
+                "name": "simdjson",
+                "configurations": [
+                  "Debug",
+                  "Release"
+                ],
+                "path": "../node_modules/@nozbe/simdjson",
+                "modular_headers": true
+              }
+            ]
+          }
         }
-      }]
+      ]
     ],
     "experiments": {
       "typedRoutes": true
