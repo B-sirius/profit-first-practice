@@ -1,11 +1,14 @@
+import Account from "@/models/account";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function AccountListItem() {
+export default function AccountListItem({ account }: { account: Account }) {
+  const { name, cap, tap } = account;
+  console.log("the things I got:", name, cap, tap);
   return (
     <View style={styles.container}>
-      <Text style={styles.name}>Profit</Text>
-      <Text>10%</Text>
-      <Text>20%</Text>
+      <Text style={styles.name}>{name}</Text>
+      <Text>{cap}%</Text>
+      <Text>{tap}%</Text>
     </View>
   );
 }
