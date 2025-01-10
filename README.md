@@ -1,50 +1,28 @@
-# Welcome to your Expo app 👋
+# Profit first
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+It's a project learning WatermelonDB following Youtuber [notJust.dev](https://www.youtube.com/watch?v=x7KE4JD-Q9A&t=10287s).
 
-## Get started
+Built with:
 
-1. Install dependencies
+- React Native (Expo router)
+- WatermelonDB
 
-   ```bash
-   npm install
-   ```
+## Thoughts about WatermelonDB
 
-2. Start the app
+Pros
 
-   ```bash
-    npx expo start
-   ```
+- Nice typing with schema and models.
+- `withObservables` does can save some logic and make db changes feel reactive and smooth.
 
-In the output, you'll find options to open the app in a
+Cons
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- The package maintance seems to be slow.
+- Missing typings for `withObservables` feature.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Conclusion
 
-## Get a fresh project
+I think WatermelonDB is useful for indie projects which needs to be developed fast and doesn't require a very long term maintance.
 
-When you're ready, run:
+Writing with it is basically fast and feels confident thanks to it's nice wrapper over sqlite, but it requires you to following their certain practice, so it would be hard to switch to another solution in future days.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The community likes it but it seems to me the author doesn't put much effort on it now, while so many issues still open. So I won't use it in business project that requires the package to be stable and well maintained.
