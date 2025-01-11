@@ -12,12 +12,15 @@ Built with:
 Pros
 
 - Nice typing with schema and models.
+- Support migration.
 - `withObservables` does can save some logic and make db changes feel reactive and smooth.
 
 Cons
 
 - The package maintance seems to be slow.
 - Missing typings for `withObservables` feature.
+- Have to write migrations manually (well, maybe it's better just to make sure you know what you are doing).
+- The document is not written for typescript use cases.
 
 Conclusion
 

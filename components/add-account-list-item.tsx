@@ -39,12 +39,14 @@ export default function AddAccountListItem() {
           placeholder="Name"
         />
         <TextInput
+          inputMode="numeric"
           value={cap}
           style={styles.input}
           onChangeText={setCap}
           placeholder="CAP %"
         />
         <TextInput
+          inputMode="numeric"
           value={tap}
           style={styles.input}
           onChangeText={setTap}

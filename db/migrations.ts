@@ -1,5 +1,21 @@
-import { schemaMigrations } from "@nozbe/watermelondb/Schema/migrations";
+import {
+  createTable,
+  schemaMigrations,
+} from "@nozbe/watermelondb/Schema/migrations";
 
 export default schemaMigrations({
-  migrations: [],
+  migrations: [
+    {
+      toVersion: 2,
+      steps: [
+        createTable({
+          name: "allocations",
+          columns: [
+            { name: "income", type: "number" },
+            { name: "created_at", type: "number" },
+          ],
+        }),
+      ],
+    },
+  ],
 });
